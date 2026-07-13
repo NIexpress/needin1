@@ -61,7 +61,7 @@ function AnimatedRoutes() {
           <Route path="/express-delivery" element={<ExpressDelivery />} />
           <Route path="/VendorAgreement" element={<VendorAgreement />} />
           <Route path="/ExpressAgreement" element={<ExpressAgreement />} />
-          <Route path="/playstore-privacy" element={<PlaystorePrivacy />} />
+          <Route path="/privacy-policy" element={<PlaystorePrivacy />} />
           <Route path="/account-deletion" element={<AccountDeletion />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
