@@ -103,8 +103,8 @@ const Footer = () => {
                   { name: "Refund Policy", path: "/refund" },
                   // { name: "Professional Agreement", path: "/VendorAgreement" },
                   { name: "Express Agreement", path: "/ExpressAgreement" },
-                  { name: "Playstore Privacy", path: "/privacy.html", external: true },
-                  { name: "Account Deletion Policy", path: "/account-deletion-policy.html", external: true },
+                  { name: "Playstore Privacy", path: "/privacy.html" },
+                  { name: "Account Deletion Policy", path: "/account-deletion-policy.html"},
                 ].map((link) => (
                   <li key={link.path}>
                     {link.external ? (
