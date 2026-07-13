@@ -32,6 +32,8 @@ import ExpressDelivery from "./pages/ExpressDelivery";
 import VendorServices from "./pages/VendorServices";
 import VendorAgreement from "./pages/VendorAgreement";
 import ExpressAgreement from "./pages/ExpressAgreement";
+import PlaystorePrivacy from "./pages/PlaystorePrivacy";
+import AccountDeletion from "./pages/AccountDeletion";
 
 
 
@@ -59,6 +61,8 @@ function AnimatedRoutes() {
           <Route path="/express-delivery" element={<ExpressDelivery />} />
           <Route path="/VendorAgreement" element={<VendorAgreement />} />
           <Route path="/ExpressAgreement" element={<ExpressAgreement />} />
+          <Route path="/playstore-privacy" element={<PlaystorePrivacy />} />
+          <Route path="/account-deletion" element={<AccountDeletion />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </PageTransition>

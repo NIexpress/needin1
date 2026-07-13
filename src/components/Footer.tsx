@@ -103,11 +103,11 @@ const Footer = () => {
                   { name: "Refund Policy", path: "/refund" },
                   // { name: "Professional Agreement", path: "/VendorAgreement" },
                   { name: "Express Agreement", path: "/ExpressAgreement" },
-                  { name: "Playstore Privacy", path: "/privacy.html" },
-                  { name: "Account Deletion Policy", path: "/account-deletion-policy.html"},
+                  { name: "Playstore Privacy", path: "/playstore-privacy" },
+                  { name: "Account Deletion Policy", path: "/account-deletion"},
                 ].map((link) => (
                   <li key={link.path}>
-                    {link.external ? (
+                    {/* {link.external ? (
                       <a
                         href={link.path}
                         target="_blank"
@@ -126,7 +126,7 @@ const Footer = () => {
                         <span className="w-0 group-hover:w-2 h-0.5 bg-primary transition-all duration-300" />
                         {link.name}
                       </Link>
-                    )}
+                    )} */}
                   </li>
                 ))}
               </ul>
