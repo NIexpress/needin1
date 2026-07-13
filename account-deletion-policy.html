@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account & Data Deletion Policy | Needin</title>
+    <meta name="description" content="Official Account and Data Deletion Policy for the Needin platform operated by Viec Carry India Pvt Ltd. Find steps for in-app and email deletion.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0F172A;
+            --text-main: #334155;
+            --text-muted: #64748B;
+            --border-color: #E2E8F0;
+            --bg-body: #FAFAFB;
+            --accent-red: #DC2626;
+            --bg-red-alert: #FEF2F2;
+            --text-red-alert: #7F1D1D;
+            --font-stack: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            background: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header Style */
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding: 25px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        /* Main Content Grid */
+        .wrapper {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 48px;
+        }
+
+        /* Sidebar Navigation */
+        aside {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .sidebar-card h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 12px;
+        }
+
+        .sidebar-nav a {
+            font-size: 14px;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s ease;
+            font-weight: 500;
+        }
+
+        .sidebar-nav a:hover {
+            color: var(--accent-red);
+        }
+
+        /* Content Container */
+        main {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+        }
+
+        .meta-dates {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            display: flex;
+            gap: 24px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.8px;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 18px;
+            font-size: 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        /* Red Warning Alert Block */
+        .alert-block {
+            background: var(--bg-red-alert);
+            border-left: 4px solid var(--accent-red);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            color: var(--text-red-alert);
+            margin-bottom: 24px;
+        }
+
+        .alert-block p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        /* Flow / Process Chart */
+        .flow-container {
+            background: #F8FAFC;
+            border: 1px dashed var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+
+        .flow-step {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .flow-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            background: var(--primary);
+            color: #ffffff;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        /* Data Info Cards */
+        .data-card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+        }
+
+        .data-card h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        /* Table Design */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            margin-bottom: 24px;
+        }
+
+        table th {
+            background: #F8FAFC;
+            color: var(--primary);
+            font-weight: 600;
+            text-align: left;
+            border-bottom: 2px solid var(--border-color);
+            padding: 12px 16px;
+            font-size: 14px;
+        }
+
+        table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+            vertical-align: top;
+        }
+
+        a {
+            color: var(--accent-red);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 900px) {
+            .wrapper {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            aside {
+                position: relative;
+                top: 0;
+            }
+
+            main {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <span class="logo">Needin</span>
+            <a href="https://www.withneedin.com" target="_blank">Go to Website</a>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <aside>
+            <div class="sidebar-card">
+                <h3>Navigation</h3>
+                <ul class="sidebar-nav">
+                    <li><a href="#how-delete">How to Delete</a></li>
+                    <li><a href="#deleted-data">Deleted Profile Data</a></li>
+                    <li><a href="#operational-data">Journeys & Bookings</a></li>
+                    <li><a href="#messages-photos">Messages & Photos</a></li>
+                    <li><a href="#retention">Data Retention Rules</a></li>
+                    <li><a href="#processing-time">Processing Windows</a></li>
+                    <li><a href="#contact">Grievance & Support</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Account & Data Deletion Policy</h1>
+            <div class="meta-dates">
+                <span><strong>Effective Date:</strong> 13 July 2026</span>
+                <span><strong>Last Updated:</strong> 13 July 2026</span>
+            </div>
+
+            <div class="alert-block">
+                <p><strong>Permanent Action Warning:</strong> Deleting your Needin account is irreversible. All of your personal identifiers, profile credentials, and verification logs will be erased permanently from our databases.</p>
+            </div>
+
+            <p>At Needin, we believe you should always remain in control of your personal information. If you no longer wish to use our logistics marketplace services, you have the right to request deletion of your account and all associated personal data at any time.</p>
+
+            <h2 id="how-delete">1. Ways to Delete Your Account</h2>
+            
+            <h3>Option A: Delete Inside the Needin App (Recommended)</h3>
+            <p>This is the fastest method and begins execution immediately via a direct, secure connection to our database servers.</p>
+            
+            <div class="flow-container">
+                <div class="flow-step">
+                    <div class="step-number">1</div>
+                    <p>Open the <strong>Needin App</strong> on your mobile device.</p>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">2</div>
+                    <p>Tap on the <strong>Profile</strong> tab in the navigation bar.</p>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">3</div>
+                    <p>Scroll down to the bottom and select <strong>Delete Account</strong>.</p>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">4</div>
+                    <p>Review the warning details and tap <strong>Continue</strong> on the first prompt.</p>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">5</div>
+                    <p>Confirm the final prompt by tapping <strong>Delete My Account</strong>.</p>
+                </div>
+            </div>
+
+            <h3>Option B: Request Deletion via Email Support</h3>
+            <p>If you have already uninstalled the application or cannot access your account profile, submit an email request to our compliance team:</p>
+            <ul>
+                <li><strong>Email Address:</strong> <a href="mailto:support@withneedin.com">support@withneedin.com</a></li>
+                <li><strong>Email Subject:</strong> Needin Account Deletion Request</li>
+                <li><strong>Required Details to Process:</strong> Your registered Full Name, Mobile Number, and registered Email Address.</li>
+            </ul>
+            <p><em>To prevent unauthorized deletions, our compliance team will perform verification steps to confirm ownership of the phone number before processing the request.</em></p>
+
+            <h2 id="deleted-data">2. What Data is Permanently Deleted?</h2>
+            <p>Upon successful processing of the account deletion, the following items are immediately hard-deleted from our Supabase servers and local device storage:</p>
+            
+            <div class="data-card">
+                <h4>Profile Identity Records</h4>
+                <p>Your name, date of birth, gender, profile photo, city, and account credentials are permanently erased.</p>
+            </div>
+            <div class="data-card">
+                <h4>Session & Device Logs</h4>
+                <p>All active authentication tokens, login histories, notification preferences, and FCM registration tokens are wiped.</p>
+            </div>
+            <div class="data-card">
+                <h4>Verification Logs</h4>
+                <p>All internal identity verification status records and associated service success tokens are removed.</p>
+            </div>
+
+            <h2 id="operational-data">3. What Happens to Journeys and Bookings?</h2>
+            <p>To preserve operational records and comply with financial auditing, transaction data undergoes a minimization and anonymization process:</p>
+            
+            <h3>Journeys</h3>
+            <p>All historical travel routes and posted journeys associated with your profile are soft-deleted and hidden. They will never appear in matching search results or future booking streams.</p>
+            
+            <h3>Bookings</h3>
+            <p>Completed, cancelled, or draft parcel delivery bookings are retained for legal audit, tax, and dispute resolution workflows. However, all personal identifiers (such as names and contact numbers) are removed, leaving only the raw anonymized transaction details.</p>
+
+            <h2 id="messages-photos">4. Handling of In-App Messages and Photos</h2>
+            
+            <h3>In-App Messages</h3>
+            <p>In-app conversations remain visible to the other matching participant (traveler or sender) to preserve their booking records and transaction history. However, your name and profile picture are replaced with a generic "Deleted User" label, completely decoupling your personal identity from the chat logs.</p>
+            
+            <h3>Profile Photos</h3>
+            <p>Your uploaded profile photograph is immediately and permanently deleted from our secure cloud storage buckets (Supabase Storage).</p>
+
+            <h2 id="retention">5. Data Retention & Legal Requirements</h2>
+            <p>Certain limited transaction data may be retained only when permitted or mandated by applicable laws (such as India's Digital Personal Data Protection Act, 2023) under the following conditions:</p>
+            <ul>
+                <li>To comply with regulatory audits, tax reporting, or legal disputes.</li>
+                <li>To assist with active law enforcement requests or judicial orders.</li>
+                <li>To detect and prevent platform abuse, fraud, or cybersecurity threats.</li>
+            </ul>
+            <p>Any retained backup records are stored securely, isolated from active production environments, and minimized to the maximum extent possible.</p>
+
+            <h2 id="processing-time">6. Processing and Deletion Timelines</h2>
+            <p>In-app requests execute immediately. For manual email requests, verification and deletion workflows are completed within a maximum window of <strong>30 days</strong>. Once the final deletion signal completes, your account details are unrecoverable.</p>
+
+            <h2 id="contact">7. Contact & Compliance Information</h2>
+            <p>For questions regarding this Deletion Policy or to submit complaints, please contact our support team:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Viec Carry India Pvt Ltd</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Brand</strong></td>
+                        <td>Needin</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Support Email</strong></td>
+                        <td><a href="mailto:support@withneedin.com">support@withneedin.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Official Website</strong></td>
+                        <td><a href="https://www.withneedin.com" target="_blank">https://www.withneedin.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Business Address</strong></td>
+                        <td>BG-60, Main NH-58, Yogi Puram, Meerut – 250002, Uttar Pradesh, India</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Grievance Office Hours:</strong> Monday through Saturday, 9:00 AM to 6:00 PM (IST). All deletion disputes will be addressed within 7 business days.</p>
+        </main>
+    </div>
+
+</body>
+
+</html>
