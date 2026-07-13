@@ -32,7 +32,7 @@ import ExpressDelivery from "./pages/ExpressDelivery";
 import VendorServices from "./pages/VendorServices";
 import VendorAgreement from "./pages/VendorAgreement";
 import ExpressAgreement from "./pages/ExpressAgreement";
-import PlaystorePrivacy from "./pages/PlaystorePrivacy";
+import PlaystorePrivacy from "./pages/PrivacyPolicy";
 import AccountDeletion from "./pages/AccountDeletion";
 
 

@@ -101,7 +101,7 @@ const Header = () => {
               </div>
             </a>
             <a
-              href="mailto:needinexpress06@gmail.com"
+              href="mailto:support@withneedin.com"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group"
               aria-label="Email"
             >
@@ -164,7 +164,7 @@ const Header = () => {
                 <span>WhatsApp</span>
               </a>
               <a
-                href="mailto:needinexpress06@gmail.com"
+                href="mailto:support@withneedin.com"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="w-5 h-5" />

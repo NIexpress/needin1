@@ -98,10 +98,10 @@ const Footer = () => {
               <ul className="space-y-3">
                 {[
                   { name: "Terms & Conditions", path: "/terms" },
-                  { name: "Privacy Policy", path: "/privacy" },
+                  // { name: "Privacy Policy", path: "/privacy" },
                   { name: "Refund Policy", path: "/refund" },
                   { name: "Express Agreement", path: "/ExpressAgreement" },
-                  { name: "Playstore Privacy", path: "/playstore-privacy" },
+                  { name: "Privacy Policy", path: "/privacy-policy" },
                   { name: "Account Deletion Policy", path: "/account-deletion"},
                 ].map((link) => (
                   <li key={link.path}>
