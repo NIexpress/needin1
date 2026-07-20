@@ -18,4 +18,13 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "index.html"),
+        privacyPolicy: path.resolve(__dirname, "privacy-policy/index.html"),
+        accountDeletion: path.resolve(__dirname, "account-deletion/index.html"),
+      },
+    },
+  },
 });

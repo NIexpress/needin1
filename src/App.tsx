@@ -71,7 +71,10 @@ function AnimatedRoutes() {
 }
 
 const App = () => {
-  const [showWelcome, setShowWelcome] = useState(true);
+  const [showWelcome, setShowWelcome] = useState(() => {
+    const path = window.location.pathname.replace(/\/$/, ""); // Remove trailing slash if any
+    return !(path === "/privacy-policy" || path === "/account-deletion");
+  });
 
 
   useEffect(() => {
